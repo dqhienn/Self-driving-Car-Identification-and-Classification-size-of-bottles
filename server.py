@@ -50,7 +50,7 @@ class Server():
                 break
 
             if cv2.waitKey(1) & 0xFF == ord("q"):
-                break 
+                break   
 
         self.cap.release()
         cv2.destroyAllWindows()

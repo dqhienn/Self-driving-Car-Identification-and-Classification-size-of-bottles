@@ -66,7 +66,9 @@ def main():
     myControl = Control(ENA=0, IN1=1, IN2=2, Servo1=3, Servo2=4)
     myControl.Servo1_Angle(110)
     myControl.Servo2_Angle(30)
-    id_stop = {0, 1, 2, 3, 4}  #['Saltshaker','Glue','Lifebuoy','7up','Pepsi']
+    id_stop = {0, 1, 2, 3, 4}  # {'Saltshaker','Glue','Lifebuoy','7up','Pepsi'}
+
+    # Dictionaries of distances
     limits = {
         0: (480, 490),    # Saltshaker
         1: (485, 490),    # Glue
@@ -101,7 +103,7 @@ def main():
             
             if len(obj_stop_ids) >= 1:
                 print("obj_stop_ids: ", obj_stop_ids)
-                for id in obj_stop_ids:     #Lặp qua những phần tử trong danh sách
+                for id in obj_stop_ids:     # Loop through the elements in the list
                     print("id: ", id)
                     print("len_obj: ", len(obj))
                     print("len_bottomLine: ", len(bottomLine))
