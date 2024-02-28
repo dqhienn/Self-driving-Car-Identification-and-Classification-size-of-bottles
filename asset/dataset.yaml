@@ -1,0 +1,6 @@
+path: C:\Users\SY TRUONG\Downloads\YOLOv8\datasets
+train: train/
+val: val/
+
+nc: 5
+names: ['Saltshaker','Glue','Lifebuoy','7up','Pepsi']
